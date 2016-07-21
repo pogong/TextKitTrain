@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DividedViewController">
+            <connections>
+                <outlet property="thrContainerView" destination="W5S-0Y-Rwp" id="EXp-kx-LO2"/>
+                <outlet property="twoContainerView" destination="Ojj-6v-ED3" id="pCu-1f-QpJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojj-6v-ED3">
+                    <rect key="frame" x="5" y="74" width="153" height="489"/>
+                    <color key="backgroundColor" red="0.83441148060000003" green="1" blue="0.21579677310000001" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5S-0Y-Rwp">
+                    <rect key="frame" x="163" y="324" width="152" height="239"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CNc-q2-iBo">
+                    <rect key="frame" x="163" y="74" width="152" height="242"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="242" id="K5d-Dj-HDM"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="W5S-0Y-Rwp" firstAttribute="width" secondItem="CNc-q2-iBo" secondAttribute="width" id="Gk3-vA-bmO"/>
+                <constraint firstItem="Ojj-6v-ED3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="Plu-R3-Bux"/>
+                <constraint firstAttribute="trailing" secondItem="CNc-q2-iBo" secondAttribute="trailing" constant="5" id="dLO-LK-whI"/>
+                <constraint firstAttribute="trailing" secondItem="W5S-0Y-Rwp" secondAttribute="trailing" constant="5" id="eT0-sS-CyD"/>
+                <constraint firstItem="Ojj-6v-ED3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="ew6-Qq-U7R"/>
+                <constraint firstItem="W5S-0Y-Rwp" firstAttribute="leading" secondItem="Ojj-6v-ED3" secondAttribute="trailing" constant="5" id="f8b-FJ-BPo"/>
+                <constraint firstAttribute="bottom" secondItem="W5S-0Y-Rwp" secondAttribute="bottom" constant="5" id="hQK-Ne-CRW"/>
+                <constraint firstItem="W5S-0Y-Rwp" firstAttribute="width" secondItem="Ojj-6v-ED3" secondAttribute="width" id="oIQ-Qq-aow"/>
+                <constraint firstAttribute="bottom" secondItem="Ojj-6v-ED3" secondAttribute="bottom" constant="5" id="sCe-02-e9Z"/>
+                <constraint firstItem="W5S-0Y-Rwp" firstAttribute="height" secondItem="Ojj-6v-ED3" secondAttribute="height" constant="-250" id="uQJ-V2-vEd"/>
+                <constraint firstItem="CNc-q2-iBo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="uQc-Cx-sev"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image.jpg" width="1000" height="1518"/>
+    </resources>
+</document>
